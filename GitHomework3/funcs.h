@@ -17,6 +17,7 @@ struct ToDoList
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ToDoItem* AddStruct(ToDoItem* obj, const int amount);
 =======
 ToDoItem* DelStruct(ToDoItem* obj, const int index, const int amount);
@@ -31,3 +32,6 @@ ToDoItem* EditStruct(ToDoItem* obj, const int amount);
 =======
 ToDoItem* ClearStructArr(ToDoItem* obj);
 >>>>>>> features/5-ClearStructArr
+=======
+void setData(ToDoItem* Obj, const int amount);
+>>>>>>> features/6-SetData

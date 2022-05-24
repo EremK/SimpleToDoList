@@ -13,3 +13,4 @@ struct ToDoList
 	ToDoItem* ToDoItems;
 };
 
+ToDoItem* ClearStructArr(ToDoItem* obj);

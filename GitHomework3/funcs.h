@@ -13,3 +13,5 @@ struct ToDoList
 	ToDoItem* ToDoItems;
 };
 
+ToDoItem* DelStruct(ToDoItem* obj, const int index, const int amount);
+

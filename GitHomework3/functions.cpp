@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ToDoItem* AddStruct(ToDoItem* obj, const int amount)
 {
 	if (amount == 0)
@@ -98,3 +99,12 @@ void showData(ToDoItem* Obj, const int index)
 >>>>>>> features/3-ShowData
 =======
 >>>>>>> features/4-EditStruct
+=======
+ToDoItem* ClearStructArr(ToDoItem* obj)
+{
+	ToDoItem* tempObj = new ToDoItem[0];
+	delete[] obj;
+	obj = tempObj;
+	return obj;
+}
+>>>>>>> features/5-ClearStructArr

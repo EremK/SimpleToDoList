@@ -13,3 +13,4 @@ struct ToDoList
 	ToDoItem* ToDoItems;
 };
 
+void menu(ToDoItem* obj, ToDoList list, int& amount);

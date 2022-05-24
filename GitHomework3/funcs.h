@@ -13,3 +13,4 @@ struct ToDoList
 	ToDoItem* ToDoItems;
 };
 
+void synchronizeAndShowList(ToDoList list, ToDoItem* obj, const int amount);

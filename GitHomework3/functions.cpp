@@ -1,13 +1,6 @@
 #include "header.h"
 #include "funcs.h"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ToDoItem* AddStruct(ToDoItem* obj, const int amount)
 {
 	if (amount == 0)
@@ -21,7 +14,14 @@ ToDoItem* AddStruct(ToDoItem* obj, const int amount)
 		for (int i = 0; i < amount; i++)
 		{
 			tempObj[i] = obj[i];
-=======
+		}
+		delete[] obj;
+		obj = tempObj;
+	}
+
+	return obj;
+}
+
 ToDoItem* DelStruct(ToDoItem* obj, const int index, const int amount)
 {
 	if (amount == 0 || index > amount || index < 0)
@@ -38,11 +38,14 @@ ToDoItem* DelStruct(ToDoItem* obj, const int index, const int amount)
 			if (i == index) continue;
 			tempObj[p] = obj[i];
 			p++;
->>>>>>> features/2-DelStruct
 		}
 		delete[] obj;
 		obj = tempObj;
-=======
+	}
+
+	return obj;
+}
+
 ToDoItem* EditStruct(ToDoItem* obj, const int amount)
 {
 	int index, choice;
@@ -83,13 +86,11 @@ ToDoItem* EditStruct(ToDoItem* obj, const int amount)
 	case 3:
 		obj[index].description = newInfo;
 		break;
->>>>>>> features/4-EditStruct
 	}
 
 	return obj;
 }
-<<<<<<< HEAD
-=======
+
 void showData(ToDoItem* Obj, const int index)
 {
 	cout << "--------------------------\n";
@@ -99,10 +100,7 @@ void showData(ToDoItem* Obj, const int index)
 	cout << "3. Desription: " << Obj[index].description << endl;
 	cout << "--------------------------\n";
 }
->>>>>>> features/3-ShowData
-=======
->>>>>>> features/4-EditStruct
-=======
+
 ToDoItem* ClearStructArr(ToDoItem* obj)
 {
 	ToDoItem* tempObj = new ToDoItem[0];
@@ -110,8 +108,7 @@ ToDoItem* ClearStructArr(ToDoItem* obj)
 	obj = tempObj;
 	return obj;
 }
->>>>>>> features/5-ClearStructArr
-=======
+
 void setData(ToDoItem* Obj, const int amount)
 {
 	string str;
@@ -129,8 +126,7 @@ void setData(ToDoItem* Obj, const int amount)
 	getline(cin, str);
 	Obj[amount].description = str;
 }
->>>>>>> features/6-SetData
-=======
+
 void synchronizeAndShowList(ToDoList list, ToDoItem* obj, const int amount)
 {
 	system("cls");
@@ -158,8 +154,7 @@ void synchronizeAndShowList(ToDoList list, ToDoItem* obj, const int amount)
 			<< " ~ ~ ~\n";
 	}
 }
->>>>>>> features/7-SynchronizeAndShowList
-=======
+
 void menu(ToDoItem* obj, ToDoList list, int& amount)
 {
 	int choice;
@@ -279,4 +274,3 @@ void menu(ToDoItem* obj, ToDoList list, int& amount)
 		}
 	}
 }
->>>>>>> features/8-Menu

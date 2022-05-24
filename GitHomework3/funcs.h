@@ -13,3 +13,5 @@ struct ToDoList
 	ToDoItem* ToDoItems;
 };
 
+ToDoItem* AddStruct(ToDoItem* obj, const int amount);
+

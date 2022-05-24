@@ -19,6 +19,7 @@ struct ToDoList
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ToDoItem* AddStruct(ToDoItem* obj, const int amount);
 =======
 ToDoItem* DelStruct(ToDoItem* obj, const int index, const int amount);
@@ -39,3 +40,6 @@ void setData(ToDoItem* Obj, const int amount);
 =======
 void synchronizeAndShowList(ToDoList list, ToDoItem* obj, const int amount);
 >>>>>>> features/7-SynchronizeAndShowList
+=======
+void menu(ToDoItem* obj, ToDoList list, int& amount);
+>>>>>>> features/8-Menu

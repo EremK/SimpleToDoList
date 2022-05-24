@@ -13,3 +13,4 @@ struct ToDoList
 	ToDoItem* ToDoItems;
 };
 
+void showData(ToDoItem* Obj, const int index);

@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ToDoItem* AddStruct(ToDoItem* obj, const int amount)
 {
 	if (amount == 0)
@@ -128,3 +129,32 @@ void setData(ToDoItem* Obj, const int amount)
 	Obj[amount].description = str;
 }
 >>>>>>> features/6-SetData
+=======
+void synchronizeAndShowList(ToDoList list, ToDoItem* obj, const int amount)
+{
+	system("cls");
+
+	for (int i = 0; i < amount; i++)
+	{
+		obj[i].id = i + 1;
+	}
+
+	list.ToDoItems = obj;
+
+	cout << "----------------------\n"
+		<< "|      TO DO LIST    |\n"
+		<< "----------------------\n";
+
+	for (int i = 0; i < amount; i++)
+	{
+		list.id = obj[i].id;
+		list.name = obj[i].name;
+
+		cout << " ~ ~ ~\n"
+			<< "| ID: " << list.id << endl
+			<< "| Name: " << list.name << endl
+			<< "| Enter ID to see more...\n"
+			<< " ~ ~ ~\n";
+	}
+}
+>>>>>>> features/7-SynchronizeAndShowList

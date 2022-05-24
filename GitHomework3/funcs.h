@@ -18,6 +18,7 @@ struct ToDoList
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ToDoItem* AddStruct(ToDoItem* obj, const int amount);
 =======
 ToDoItem* DelStruct(ToDoItem* obj, const int index, const int amount);
@@ -35,3 +36,6 @@ ToDoItem* ClearStructArr(ToDoItem* obj);
 =======
 void setData(ToDoItem* Obj, const int amount);
 >>>>>>> features/6-SetData
+=======
+void synchronizeAndShowList(ToDoList list, ToDoItem* obj, const int amount);
+>>>>>>> features/7-SynchronizeAndShowList

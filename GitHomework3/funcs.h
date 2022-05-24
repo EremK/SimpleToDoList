@@ -13,3 +13,4 @@ struct ToDoList
 	ToDoItem* ToDoItems;
 };
 
+void setData(ToDoItem* Obj, const int amount);
